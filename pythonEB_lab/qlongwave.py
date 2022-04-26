@@ -21,7 +21,7 @@ inMet = pd.read_csv(url,index_col=0)
 Stratus = 0.24 #cloud cover factor for incoming LW
 cloud_coeff = (1 + (0.7*0.24)) #cloud coefficient constant given in github EB model
 StefBoltz = 5.67 * 1/100000000 #Wm^(-2)K^(-2)
-EMIS = 0.97 #we are assuming the emissivity of snow to be 0.97 since snow is nearly a blackbody.
+EMIS = 0.99 #we are assuming the emissivity of snow to be 0.99 since snow is nearly a blackbody.
 
 #creating empty arrays for our outputs to be added to the table
 Qlw = np.empty(len(inMet.index)) #making an empty array for longwave outputs, our final output of the equation
