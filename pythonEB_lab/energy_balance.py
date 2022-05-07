@@ -1,9 +1,9 @@
 from vapPressure import *
 from advectedheat import *
-from longwave import *
+from qlongwave import *
 from shortwave import *
 from latentheat import *
-from sensibleheat import *
+from sensibleheat_lila import *
 from melt import *
 
 #Define constants
