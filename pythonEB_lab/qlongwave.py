@@ -58,7 +58,7 @@ def longwave(df):
   inMet = df #renaming the dataframe
 
   for i in range(len(inMet.index)):
-    LWin[i] = (0.575*ea**(1/7)) * StefBoltz * ((inMet.iloc[i]['T_C'] + 273.2)**4) * cloud_coeff #LWin for clear skies, multiplied by the cloud coefficient
+    LWin[i] = (0.575*'ea'**(1/7)) * StefBoltz * ((inMet.iloc[i]['T_C'] + 273.2)**4) * cloud_coeff #LWin for clear skies, multiplied by the cloud coefficient
 
   inMet['LWin'] = LWin.tolist() #adding LWin to the table 
   
